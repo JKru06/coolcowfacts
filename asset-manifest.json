@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/coolcowfacts/static/css/main.625cad2a.chunk.css",
-    "main.js": "/coolcowfacts/static/js/main.3db61149.chunk.js",
-    "main.js.map": "/coolcowfacts/static/js/main.3db61149.chunk.js.map",
-    "runtime-main.js": "/coolcowfacts/static/js/runtime-main.d1027394.js",
-    "runtime-main.js.map": "/coolcowfacts/static/js/runtime-main.d1027394.js.map",
-    "static/css/2.61b4cb56.chunk.css": "/coolcowfacts/static/css/2.61b4cb56.chunk.css",
-    "static/js/2.20d3fdd0.chunk.js": "/coolcowfacts/static/js/2.20d3fdd0.chunk.js",
-    "static/js/2.20d3fdd0.chunk.js.map": "/coolcowfacts/static/js/2.20d3fdd0.chunk.js.map",
-    "index.html": "/coolcowfacts/index.html",
-    "static/css/2.61b4cb56.chunk.css.map": "/coolcowfacts/static/css/2.61b4cb56.chunk.css.map",
-    "static/css/main.625cad2a.chunk.css.map": "/coolcowfacts/static/css/main.625cad2a.chunk.css.map",
-    "static/js/2.20d3fdd0.chunk.js.LICENSE.txt": "/coolcowfacts/static/js/2.20d3fdd0.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.625cad2a.chunk.css",
+    "main.js": "/static/js/main.3db61149.chunk.js",
+    "main.js.map": "/static/js/main.3db61149.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cc85cbe0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cc85cbe0.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.20d3fdd0.chunk.js": "/static/js/2.20d3fdd0.chunk.js",
+    "static/js/2.20d3fdd0.chunk.js.map": "/static/js/2.20d3fdd0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/static/css/2.61b4cb56.chunk.css.map",
+    "static/css/main.625cad2a.chunk.css.map": "/static/css/main.625cad2a.chunk.css.map",
+    "static/js/2.20d3fdd0.chunk.js.LICENSE.txt": "/static/js/2.20d3fdd0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d1027394.js",
+    "static/js/runtime-main.cc85cbe0.js",
     "static/css/2.61b4cb56.chunk.css",
     "static/js/2.20d3fdd0.chunk.js",
     "static/css/main.625cad2a.chunk.css",
