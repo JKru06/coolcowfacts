@@ -23,7 +23,7 @@ function Facts() {
       <h1 class="text-light fw-light landing-text">"{fact}"</h1>
       <br />
       <span class="text-light">source:</span>
-      <span class="text-light fw-light landing-text"><a class="text-light fw-light landing-text" href={source}>source</a></span>
+      <a href={source}>link</a>
       <br />
       <button class="btn btn-lg btn-outline-light" onClick={getFact}>
           Next Fact
