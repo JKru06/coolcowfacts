@@ -21,8 +21,8 @@ function Facts() {
       <p class="text-light">fact number</p>
       <hr class="text-light" />
       <h1 class="text-light fw-light landing-text">"{fact}"</h1>
+      <a class="text-light text-decoration-none" href={source} target="_blank" rel="noopener noreferrer">source</a>
       <br />
-      <span class="text-light">source: <a href={source}>link</a></span>
       <br />
       <button class="btn btn-lg btn-outline-light" onClick={getFact}>
           Next Fact
