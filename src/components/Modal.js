@@ -11,11 +11,25 @@ function Modal() {
     const handelSubmit = (e) => {
         e.preventDefault();
         const newFact = {Email, Fact, Source};
-        axios.post('https:coolcowfacts.herokuapp.com/create', {
-            Fact: newFact
+        const url = 'https://coolcowfacts'
+
+        const data = {
+                "title": newFact
+        }
+
+        const options = {
+        method: 'POST',
+        headers: { 'content-type': 'application/x-www-form-urlencoded' },
+        data: qs.stringify(data),
+        url
+        }
+
+        axios(options)
+        .then(function(response) {
+            console.log(response.data)
         })
-        .then(function (response) {
-            console.log(response);
+        .catch(function(error) {
+            console.log(error)
         })
     }
 
