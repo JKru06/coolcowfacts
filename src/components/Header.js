@@ -13,6 +13,11 @@ function Header() {
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-link nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Submit Fact
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
