@@ -13,26 +13,20 @@ function Modal() {
     const handelSubmit = (e) => {
         e.preventDefault();
         const newFact = {Email, Fact, Source};
-        const url = 'https://coolcowfacts/create'
-
-        const data = {
-                "title": newFact
-        }
-
-        const options = {
-        method: 'POST',
-        headers: { 'content-type': 'application/x-www-form-urlencoded' },
-        data: qs.stringify(data),
-        url
-        }
-
-        axios(options)
-        .then(function(response) {
-            console.log(response.data)
-        })
-        .catch(function(error) {
-            console.log(error)
-        })
+        axios({
+            method: 'post',
+            url: 'https://coolcowfacts.herokuapp.com/create',
+            data: {
+                title: newFact
+            },
+            headers: {
+                'Content-Type': 'text/plain;charset=utf-8',
+            },
+        }).then(function (response) {
+            console.log(response);
+        }).catch(function (error) {
+            console.log(error);
+        });
     }
 
 
