@@ -23,9 +23,8 @@ function Modal() {
                 'Content-Type': 'application/json',
             },
         }).then(function (response) {
-            var Modal = document.getElementById('exampleModal')
-            Modal.close();
             console.log(response);
+            window.location.reload();
         }).catch(function (error) {
             console.log(error);
         });
