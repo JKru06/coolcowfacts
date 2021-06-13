@@ -17,7 +17,7 @@ function Modal() {
             method: 'post',
             url: 'https://coolcowfacts.herokuapp.com/create',
             data: {
-                title: newFact
+                "title": "test"
             },
             headers: {
                 'Content-Type': 'application/json',
