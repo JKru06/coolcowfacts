@@ -17,12 +17,14 @@ function Modal() {
             method: 'post',
             url: 'https://coolcowfacts.herokuapp.com/create',
             data: {
-                "title": {newFact}
+                "fact": {newFact}
             },
             headers: {
                 'Content-Type': 'application/json',
             },
         }).then(function (response) {
+            var Modal = document.getElementById('exampleModal')
+            Modal.close();
             console.log(response);
         }).catch(function (error) {
             console.log(error);
