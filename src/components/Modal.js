@@ -13,7 +13,7 @@ function Modal() {
     const handelSubmit = (e) => {
         e.preventDefault();
         const newFact = {Email, Fact, Source};
-        const url = 'https://coolcowfacts'
+        const url = 'https://coolcowfacts/create'
 
         const data = {
                 "title": newFact
