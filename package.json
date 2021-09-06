@@ -11,7 +11,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
-    "bootstrap": "^5.0.1",
+    "bootstrap": "^5.1.0",
     "firebase": "^8.9.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
@@ -48,5 +48,16 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.0"
+  },
+  "description": "come get your cow facts!",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKru06/coolcowfacts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JKru06/coolcowfacts/issues"
   }
 }
