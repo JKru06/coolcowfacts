@@ -1,6 +1,36 @@
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useCollectionData } from 'react-firebase-hooks/firestore';
+
 import React from 'react'
+import SignIn from "./SignIn";
+import SignOut from "./SignOut";
+
+function Dropdown() {
+    const user = firebase.auth().currentUser;
+    return (
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {user.displayName}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">My facts</a></li>
+            <li><a class="dropdown-item" href="#">Admin</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><SignOut class="dropdown-item btn btn-link text-dark" /></li>
+          </ul>
+        </li>
+    )
+}
 
 function Header() {
+const user = firebase.auth().currentUser;
+    const handelSubmit = (e) => {
+        e.preventDefault();
+    }
   return (
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
         <div class="container-fluid">
@@ -19,6 +49,11 @@ function Header() {
                         </button>
                     </li>
                 </ul>
+                    <form onSubmit={handelSubmit}>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        { user ? <Dropdown /> : <SignIn class="btn btn-link nav-link active text-dark" message="Sign In" /> }
+                        </ul>
+                    </form>
             </div>
         </div>
     </nav>

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import axios from "axios";
 
 function Facts() {
@@ -15,6 +15,10 @@ function Facts() {
     });
   }
 
+  useEffect(() => {
+    getFact();
+  }, []);
+
   return (
     <div>
       <h1 class="text-light fw-light landing-text">{id}</h1>
@@ -29,7 +33,6 @@ function Facts() {
       </button>
     </div>    
   )
-
 }
 
 export default Facts;
