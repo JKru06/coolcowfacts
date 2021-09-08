@@ -16,7 +16,7 @@ const qs = require('qs')
 const auth = firebase.auth();
 
 function Modal() {
-    const account = useAuthState(auth);
+    const account = useAuthState(auth).currentUser;
 
     const Email = account.email;
     const [Fact, setFact] = useState('');
