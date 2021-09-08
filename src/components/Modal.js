@@ -18,7 +18,7 @@ const auth = firebase.auth();
 function Modal() {
     const account = useAuthState(auth).currentUser;
 
-    const Email = account.email;
+    const Email = account[0].email;
     const [Fact, setFact] = useState('');
     const [Source, setSource] = useState('');
 
